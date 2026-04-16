@@ -20,7 +20,7 @@
   }
   .nav-list-boxs {
     width: 95%;
-    height: max-content;
+    height: 100%;
     flex-direction: column;
     align-items: start;
     padding: 2rem;
