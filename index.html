@@ -1,0 +1,998 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gp - Template</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="icon" href="img/logo.png" />
+    <script defer src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
+  </head>
+  <body>
+    <nav class="nav" id="nav-bar">
+      <h1 class="nav-logo">GP<span class="nav-logo-span">.</span></h1>
+      <div class="nav-list-box">
+        <i class="toggle-btn close bi-x"></i>
+        <ul class="nav-list-boxs modal">
+          <li class="nav-list"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-list"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-list"><a href="#service" class="nav-link">Services</a></li>
+          <li class="nav-list"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li class="nav-list"><a href="#team" class="nav-link">Team</a></li>
+          <li class="nav-list"><a href="#" class="nav-link">Dropdown</a></li>
+          <li class="nav-list"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+      <div style="display: flex; align-items: center; gap: 5px">
+        <a href="#" class="nav-btn">Get Started</a>
+        <div class="toggle-box">
+          <i class="toggle-btn open bi-list"></i>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </nav>
+    <div class="observer-target"></div>
+    <section id="home" class="home">
+      <h1 class="home-header-1">Powerful Digital</h1>
+      <h1 class="home-header-1">Solutions With GP.</h1>
+      <p class="home-title">We are team of talented digital marketers</p>
+      <div class="home-icon-boxes">
+        <div class="home-icon-box">
+          <i class="home-icon bi-binoculars"></i>
+          <h1 class="home-icon-text">Lorem Ipsum</h1>
+        </div>
+        <div class="home-icon-box">
+          <i class="home-icon bi-bullseye"></i>
+          <h1 class="home-icon-text">Dolor Sitema</h1>
+        </div>
+        <div class="home-icon-box">
+          <i class="home-icon bi-fullscreen-exit"></i>
+          <h1 class="home-icon-text">Sedare Perspiciatis</h1>
+        </div>
+        <div class="home-icon-box">
+          <i class="home-icon bi-card-list"></i>
+          <h1 class="home-icon-text">Magni Dolores</h1>
+        </div>
+        <div class="home-icon-box">
+          <i class="home-icon bi-gem"></i>
+          <h1 class="home-icon-text">Nemos Enimade</h1>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="about-left">
+        <h1 class="about-left-header">Voluptatem dignissimos provident</h1>
+        <p class="about-left-title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p class="about-left-list">
+          <i class="bi-check2-all"></i>
+          Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p class="about-left-list">
+          <i class="bi-check2-all"></i>
+          Duis aute irure dolor in reprehenderit in voluptate velit.
+        </p>
+        <p class="about-left-list">
+          <i class="bi-check2-all"></i>
+          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate trideta storacalaperda
+          mastiro dolore eu fugiat nulla pariatur.
+        </p>
+        <p class="about-left-text">
+          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+        </p>
+      </div>
+      <img src="img/about.jpg" alt="Loading..." class="about-img" />
+    </section>
+    <section class="slider">
+      <swiper-container
+        class="mySwiper"
+        pagination="true"
+        pagination-clickable="true"
+        navigation="false"
+        space-between="100"
+        centered-slides="false"
+        autoplay-delay="2000"
+        autoplay-disable-on-interaction="false"
+        loop="true"
+        slides-per-view="6"
+      >
+        >
+        <swiper-slide>
+          <img class="client-img" src="img/clients/client-1.png" alt="" />
+        </swiper-slide>
+        <swiper-slide>
+          <img class="client-img" src="img/clients/client-2.png" alt="" />
+        </swiper-slide>
+        <swiper-slide>
+          <img class="client-img" src="img/clients/client-3.png" alt="" />
+        </swiper-slide>
+        <swiper-slide>
+          <img class="client-img" src="img/clients/client-4.png" alt="" />
+        </swiper-slide>
+        <swiper-slide>
+          <img class="client-img" src="img/clients/client-5.png" alt="" />
+        </swiper-slide>
+        <swiper-slide>
+          <img class="client-img" src="img/clients/client-6.png" alt="" />
+        </swiper-slide>
+        <swiper-slide>
+          <img class="client-img" src="img/clients/client-7.png" alt="" />
+        </swiper-slide>
+        <swiper-slide>
+          <img class="client-img" src="img/clients/client-8.png" alt="" />
+        </swiper-slide>
+      </swiper-container>
+    </section>
+    <section class="features">
+      <img src="img/features-bg.jpg" alt="" class="features-img" />
+      <div class="features-right">
+        <div class="features-right-content">
+          <i class="features-icon bi-archive"></i>
+          <div class="features-right-box">
+            <h1 class="features-right-header">Est labore ad</h1>
+            <p class="features-right-text">
+              Consequuntur sunt aut quasi enim aliquam quae harum pariatur
+              laboris nisi ut aliquip
+            </p>
+          </div>
+        </div>
+        <div class="features-right-content">
+          <i class="features-icon bi-basket"></i>
+          <div class="features-right-box">
+            <h1 class="features-right-header">Harum esse qui</h1>
+            <p class="features-right-text">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt
+            </p>
+          </div>
+        </div>
+        <div class="features-right-content">
+          <i class="features-icon bi-broadcast"></i>
+          <div class="features-right-box">
+            <h1 class="features-right-header">Aut occaecati</h1>
+            <p class="features-right-text">
+              Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores
+              omnis facere
+            </p>
+          </div>
+        </div>
+        <div class="features-right-content">
+          <i class="features-icon bi-camera-reels"></i>
+          <div class="features-right-box">
+            <h1 class="features-right-header">Beatae veritatis</h1>
+            <p class="features-right-text">
+              Expedita veritatis consequuntur nihil tempore laudantium vitae
+              denat pacta
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="service" class="service">
+      <h2 class="service-headers">Service</h2>
+      <h1 class="service-title">CHECK OUR SERVICES</h1>
+      <div class="service-grid-box">
+        <div class="service-grid">
+          <i class="service-icon bi-activity"></i>
+          <h1 class="service-header">Nesciunt Mete</h1>
+          <p class="service-text">
+            Provident nihil minus qui consequatur non omnis maiores. Eos
+            accusantium minus dolores iure perferendis tempore et consequatur.
+          </p>
+        </div>
+        <div class="service-grid">
+          <i class="service-icon bi-broadcast"></i>
+          <h1 class="service-header">Eosle Commodi</h1>
+          <p class="service-text">
+            Provident nihil minus qui consequatur non omnis maiores. Eos
+            accusantium minus dolores iure perferendis tempore et consequatur.
+          </p>
+        </div>
+        <div class="service-grid">
+          <i class="service-icon bi-easel"></i>
+          <h1 class="service-header">Ledo Markt</h1>
+          <p class="service-text">
+            Provident nihil minus qui consequatur non omnis maiores. Eos
+            accusantium minus dolores iure perferendis tempore et consequatur.
+          </p>
+        </div>
+        <div class="service-grid">
+          <i class="service-icon bi-bounding-box-circles"></i>
+          <h1 class="service-header">Asperiores Commodit</h1>
+          <p class="service-text">
+            Provident nihil minus qui consequatur non omnis maiores. Eos
+            accusantium minus dolores iure perferendis tempore et consequatur.
+          </p>
+        </div>
+        <div class="service-grid">
+          <i class="service-icon bi-calendar4-week"></i>
+          <h1 class="service-header">Velit Doloremque</h1>
+          <p class="service-text">
+            Provident nihil minus qui consequatur non omnis maiores. Eos
+            accusantium minus dolores iure perferendis tempore et consequatur.
+          </p>
+        </div>
+        <div class="service-grid">
+          <i class="service-icon bi-chat-square-text"></i>
+          <h1 class="service-header">Dolori Architecto</h1>
+          <p class="service-text">
+            Provident nihil minus qui consequatur non omnis maiores. Eos
+            accusantium minus dolores iure perferendis tempore et consequatur.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <h1 class="cta-header">Call To Action</h1>
+      <p class="cta-text">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <a href="#" class="cta-btn">Call to action</a>
+    </section>
+    <section id="portfolio" class="portfolio">
+      <h2 class="service-headers">Portfolio</h2>
+      <h1 class="service-title">CHECK OUR PORTFOLIO</h1>
+      <div class="port-btn-box">
+        <button class="port-btn port-btn-1 active">All</button>
+        <button class="port-btn port-btn-2">App</button>
+        <button class="port-btn port-btn-3">Card</button>
+        <button class="port-btn port-btn-4">Web</button>
+      </div>
+      <div class="portfolio-grid-box">
+        <div class="portfolio-grid port-1 active">
+          <div class="port-one">
+            <div class="port-grid-box">
+              <img
+                src="img/masonry-portfolio/masonry-portfolio-1.jpg"
+                alt=""
+                class="port-img"
+              />
+              <div class="port-img-box">
+                <div class="port-img-left">
+                  <h1 class="port-left-header">App 1</h1>
+                  <p class="port-left-text">Lorem ipsum, dolor sit</p>
+                </div>
+                <div class="port-icon-box">
+                  <a
+                    href="img/masonry-portfolio/masonry-portfolio-1.jpg"
+                    class="bi-zoom-in port-icon"
+                  ></a>
+                  <a href="#" class="bi-link-45deg port-icon"></a>
+                </div>
+              </div>
+            </div>
+            <div class="port-grid-box">
+              <img
+                src="img/masonry-portfolio/masonry-portfolio-6.jpg"
+                alt=""
+                class="port-img"
+              />
+              <div class="port-img-box">
+                <div class="port-img-left">
+                  <h1 class="port-left-header">Branding 2</h1>
+                  <p class="port-left-text">Lorem ipsum, dolor sit</p>
+                </div>
+                <div class="port-icon-box">
+                  <a
+                    href="img/masonry-portfolio/masonry-portfolio-6.jpg"
+                    class="bi-zoom-in port-icon"
+                  ></a>
+                  <a href="#" class="bi-link-45deg port-icon"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="port-two">
+            <div class="port-grid-box">
+              <img
+                src="img/masonry-portfolio/masonry-portfolio-2.jpg"
+                alt=""
+                class="port-img"
+              />
+              <div class="port-img-box">
+                <div class="port-img-left">
+                  <h1 class="port-left-header">Product 1</h1>
+                  <p class="port-left-text">Lorem ipsum, dolor sit</p>
+                </div>
+                <div class="port-icon-box">
+                  <a
+                    href="img/masonry-portfolio/masonry-portfolio-2.jpg"
+                    class="bi-zoom-in port-icon"
+                  ></a>
+                  <a href="#" class="bi-link-45deg port-icon"></a>
+                </div>
+              </div>
+            </div>
+            <div class="port-grid-box">
+              <img
+                src="img/masonry-portfolio/masonry-portfolio-5.jpg"
+                alt=""
+                class="port-img"
+              />
+              <div class="port-img-box">
+                <div class="port-img-left">
+                  <h1 class="port-left-header">Product 2</h1>
+                  <p class="port-left-text">Lorem ipsum, dolor sit</p>
+                </div>
+                <div class="port-icon-box">
+                  <a
+                    href="img/masonry-portfolio/masonry-portfolio-5.jpg"
+                    class="bi-zoom-in port-icon"
+                  ></a>
+                  <a href="#" class="bi-link-45deg port-icon"></a>
+                </div>
+              </div>
+            </div>
+            <div class="port-grid-box">
+              <img
+                src="img/masonry-portfolio/masonry-portfolio-9.jpg"
+                alt=""
+                class="port-img"
+              />
+              <div class="port-img-box">
+                <div class="port-img-left">
+                  <h1 class="port-left-header">Branding 3</h1>
+                  <p class="port-left-text">Lorem ipsum, dolor sit</p>
+                </div>
+                <div class="port-icon-box">
+                  <a
+                    href="img/masonry-portfolio/masonry-portfolio-9.jpg"
+                    class="bi-zoom-in port-icon"
+                  ></a>
+                  <a href="#" class="bi-link-45deg port-icon"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="port-three">
+            <div class="port-grid-box">
+              <img
+                src="img/masonry-portfolio/masonry-portfolio-3.jpg"
+                alt=""
+                class="port-img"
+              />
+              <div class="port-img-box">
+                <div class="port-img-left">
+                  <h1 class="port-left-header">Branding 1</h1>
+                  <p class="port-left-text">Lorem ipsum, dolor sit</p>
+                </div>
+                <div class="port-icon-box">
+                  <a
+                    href="img/masonry-portfolio/masonry-portfolio-3.jpg"
+                    class="bi-zoom-in port-icon"
+                  ></a>
+                  <a href="#" class="bi-link-45deg port-icon"></a>
+                </div>
+              </div>
+            </div>
+            <div class="port-grid-box">
+              <img
+                src="img/masonry-portfolio/masonry-portfolio-4.jpg"
+                alt=""
+                class="port-img"
+              />
+              <div class="port-img-box">
+                <div class="port-img-left">
+                  <h1 class="port-left-header">App 2</h1>
+                  <p class="port-left-text">Lorem ipsum, dolor sit</p>
+                </div>
+                <div class="port-icon-box">
+                  <a
+                    href="img/masonry-portfolio/masonry-portfolio-4.jpg"
+                    class="bi-zoom-in port-icon"
+                  ></a>
+                  <a href="#" class="bi-link-45deg port-icon"></a>
+                </div>
+              </div>
+            </div>
+            <div class="port-grid-box">
+              <img
+                src="img/masonry-portfolio/masonry-portfolio-7.jpg"
+                alt=""
+                class="port-img"
+              />
+              <div class="port-img-box">
+                <div class="port-img-left">
+                  <h1 class="port-left-header">App 3</h1>
+                  <p class="port-left-text">Lorem ipsum, dolor sit</p>
+                </div>
+                <div class="port-icon-box">
+                  <a
+                    href="img/masonry-portfolio/masonry-portfolio-7.jpg"
+                    class="bi-zoom-in port-icon"
+                  ></a>
+                  <a href="#" class="bi-link-45deg port-icon"></a>
+                </div>
+              </div>
+            </div>
+            <div class="port-grid-box">
+              <img
+                src="img/masonry-portfolio/masonry-portfolio-8.jpg"
+                alt=""
+                class="port-img"
+              />
+              <div class="port-img-box">
+                <div class="port-img-left">
+                  <h1 class="port-left-header">Product 3</h1>
+                  <p class="port-left-text">Lorem ipsum, dolor sit</p>
+                </div>
+                <div class="port-icon-box">
+                  <a
+                    href="img/masonry-portfolio/masonry-portfolio-8.jpg"
+                    class="bi-zoom-in port-icon"
+                  ></a>
+                  <a href="#" class="bi-link-45deg port-icon"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-grid port-2">
+          <div class="port-grid-box">
+            <img
+              src="img/masonry-portfolio/masonry-portfolio-1.jpg"
+              alt=""
+              class="port-img"
+            />
+            <div class="port-img-box">
+              <div class="port-img-left">
+                <h1 class="port-left-header">App 1</h1>
+                <p class="port-left-text">Lorem ipsum, dolor sit</p>
+              </div>
+              <div class="port-icon-box">
+                <a
+                  href="img/masonry-portfolio/masonry-portfolio-1.jpg"
+                  class="bi-zoom-in port-icon"
+                ></a>
+                <a href="#" class="bi-link-45deg port-icon"></a>
+              </div>
+            </div>
+          </div>
+          <div class="port-grid-box">
+            <img
+              src="img/masonry-portfolio/masonry-portfolio-4.jpg"
+              alt=""
+              class="port-img"
+            />
+            <div class="port-img-box">
+              <div class="port-img-left">
+                <h1 class="port-left-header">App 2</h1>
+                <p class="port-left-text">Lorem ipsum, dolor sit</p>
+              </div>
+              <div class="port-icon-box">
+                <a
+                  href="img/masonry-portfolio/masonry-portfolio-4.jpg"
+                  class="bi-zoom-in port-icon"
+                ></a>
+                <a href="#" class="bi-link-45deg port-icon"></a>
+              </div>
+            </div>
+          </div>
+          <div class="port-grid-box">
+            <img
+              src="img/masonry-portfolio/masonry-portfolio-7.jpg"
+              alt=""
+              class="port-img"
+            />
+            <div class="port-img-box">
+              <div class="port-img-left">
+                <h1 class="port-left-header">App 3</h1>
+                <p class="port-left-text">Lorem ipsum, dolor sit</p>
+              </div>
+              <div class="port-icon-box">
+                <a
+                  href="img/masonry-portfolio/masonry-portfolio-7.jpg"
+                  class="bi-zoom-in port-icon"
+                ></a>
+                <a href="#" class="bi-link-45deg port-icon"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-grid port-3">
+          <div class="port-grid-box">
+            <img
+              src="img/masonry-portfolio/masonry-portfolio-2.jpg"
+              alt=""
+              class="port-img"
+            />
+            <div class="port-img-box">
+              <div class="port-img-left">
+                <h1 class="port-left-header">Product 1</h1>
+                <p class="port-left-text">Lorem ipsum, dolor sit</p>
+              </div>
+              <div class="port-icon-box">
+                <a
+                  href="img/masonry-portfolio/masonry-portfolio-2.jpg"
+                  class="bi-zoom-in port-icon"
+                ></a>
+                <a href="#" class="bi-link-45deg port-icon"></a>
+              </div>
+            </div>
+          </div>
+          <div class="port-grid-box">
+            <img
+              src="img/masonry-portfolio/masonry-portfolio-5.jpg"
+              alt=""
+              class="port-img"
+            />
+            <div class="port-img-box">
+              <div class="port-img-left">
+                <h1 class="port-left-header">Product 2</h1>
+                <p class="port-left-text">Lorem ipsum, dolor sit</p>
+              </div>
+              <div class="port-icon-box">
+                <a
+                  href="img/masonry-portfolio/masonry-portfolio-5.jpg"
+                  class="bi-zoom-in port-icon"
+                ></a>
+                <a href="#" class="bi-link-45deg port-icon"></a>
+              </div>
+            </div>
+          </div>
+          <div class="port-grid-box">
+            <img
+              src="img/masonry-portfolio/masonry-portfolio-8.jpg"
+              alt=""
+              class="port-img"
+            />
+            <div class="port-img-box">
+              <div class="port-img-left">
+                <h1 class="port-left-header">Product 3</h1>
+                <p class="port-left-text">Lorem ipsum, dolor sit</p>
+              </div>
+              <div class="port-icon-box">
+                <a
+                  href="img/masonry-portfolio/masonry-portfolio-8.jpg"
+                  class="bi-zoom-in port-icon"
+                ></a>
+                <a href="#" class="bi-link-45deg port-icon"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-grid port-4">
+          <div class="port-grid-box">
+            <img
+              src="img/masonry-portfolio/masonry-portfolio-3.jpg"
+              alt=""
+              class="port-img"
+            />
+            <div class="port-img-box">
+              <div class="port-img-left">
+                <h1 class="port-left-header">Branding 1</h1>
+                <p class="port-left-text">Lorem ipsum, dolor sit</p>
+              </div>
+              <div class="port-icon-box">
+                <a
+                  href="img/masonry-portfolio/masonry-portfolio-3.jpg"
+                  class="bi-zoom-in port-icon"
+                ></a>
+                <a href="#" class="bi-link-45deg port-icon"></a>
+              </div>
+            </div>
+          </div>
+          <div class="port-grid-box">
+            <img
+              src="img/masonry-portfolio/masonry-portfolio-6.jpg"
+              alt=""
+              class="port-img"
+            />
+            <div class="port-img-box">
+              <div class="port-img-left">
+                <h1 class="port-left-header">Branding 2</h1>
+                <p class="port-left-text">Lorem ipsum, dolor sit</p>
+              </div>
+              <div class="port-icon-box">
+                <a
+                  href="img/masonry-portfolio/masonry-portfolio-6.jpg"
+                  class="bi-zoom-in port-icon"
+                ></a>
+                <a href="#" class="bi-link-45deg port-icon"></a>
+              </div>
+            </div>
+          </div>
+          <div class="port-grid-box">
+            <img
+              src="img/masonry-portfolio/masonry-portfolio-9.jpg"
+              alt=""
+              class="port-img"
+            />
+            <div class="port-img-box">
+              <div class="port-img-left">
+                <h1 class="port-left-header">Branding 3</h1>
+                <p class="port-left-text">Lorem ipsum, dolor sit</p>
+              </div>
+              <div class="port-icon-box">
+                <a
+                  href="img/masonry-portfolio/masonry-portfolio-9.jpg"
+                  class="bi-zoom-in port-icon"
+                ></a>
+                <a href="#" class="bi-link-45deg port-icon"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="stats">
+        <img src="img/stats-img.jpg" alt="" class="stats-img" />
+        <div class="stats-right">
+          <h1 class="stats-header">Voluptatem dignissimos provident quasi</h1>
+          <p class="stats-title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+            aute irure dolor in reprehenderit
+          </p>
+          <div class="stats-flex-box">
+            <div class="each-stats">
+              <i class="stats-icon bi-emoji-smile"></i>
+              <div>
+                <h1 class="each-stats-header">232</h1>
+                <p class="each-stats-text">
+                  <span>Happy Clients </span>consequuntur quae
+                </p>
+              </div>
+            </div>
+            <div class="each-stats">
+              <i class="stats-icon bi-journal-richtext"></i>
+              <div>
+                <h1 class="each-stats-header">521</h1>
+                <p class="each-stats-text">
+                  <span>Projects </span>adipisci atque cum quia aut
+                </p>
+              </div>
+            </div>
+            <div class="each-stats">
+              <i class="stats-icon bi-headset"></i>
+              <div>
+                <h1 class="each-stats-header">1453</h1>
+                <p class="each-stats-text">
+                  <span>Hours Of Support </span> aut commodi quaerat
+                </p>
+              </div>
+            </div>
+            <div class="each-stats">
+              <i class="stats-icon bi-people"></i>
+              <div>
+                <h1 class="each-stats-header">32</h1>
+                <p class="each-stats-text">
+                  <span>Hard Workers </span> rerum asperiores dolor
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="port-slider">
+      <swiper-container
+        class="mySwiper"
+        pagination="true"
+        pagination-clickable="true"
+        navigation="false"
+        space-between="30"
+        centered-slides="true"
+        autoplay-delay="2500"
+        autoplay-disable-on-interaction="false"
+        loop="true"
+        slides-per-view="1"
+      >
+        <swiper-slide class="slide-two">
+          <img
+            src="img/testimonials/testimonials-1.jpg"
+            alt=""
+            class="test-img"
+          />
+          <h1 class="test-header">Saul Goodman</h1>
+          <p class="test-role">Ceo and founder</p>
+          <div class="test-icon-box">
+            <i class="test-icon bi-star-fill"></i>
+            <i class="test-icon bi-star-fill"></i>
+            <i class="test-icon bi-star-fill"></i>
+            <i class="test-icon bi-star-fill"></i>
+            <i class="test-icon bi-star-fill"></i>
+          </div>
+          <div class="test-text-box">
+            <p class="test-text">
+              <sup class="bi-quote test-icon-up"></sup>Export tempor illum tamen
+              malis malis eram quae irure esse labore quem cillum quid cillum
+              eram malis quorum velit fore eram velit sunt aliqua noster fugiat
+              irure amet legam anim culpa.<span
+                class="bi-quote test-icon-down"
+              ></span>
+            </p>
+          </div>
+        </swiper-slide>
+        <swiper-slide class="slide-two">
+          <img
+            src="img/testimonials/testimonials-2.jpg"
+            alt=""
+            class="test-img"
+          />
+          <h1 class="test-header">Sara Wilsson</h1>
+          <p class="test-role">Designer</p>
+          <div class="test-icon-box">
+            <i class="test-icon bi-star-fill"></i>
+            <i class="test-icon bi-star-fill"></i>
+            <i class="test-icon bi-star-fill"></i>
+            <i class="test-icon bi-star-fill"></i>
+            <i class="test-icon bi-star-fill"></i>
+          </div>
+          <p class="test-text">
+            <sup class="bi-quote test-icon-up"></sup>Export tempor illum tamen
+            malis malis eram quae irure esse labore quem cillum quid cillum eram
+            malis quorum velit fore eram velit sunt aliqua noster fugiat irure
+            amet legam anim culpa.
+            <span class="bi-quote test-icon-down"></span>
+          </p>
+        </swiper-slide>
+        <swiper-slide class="slide-two">
+          <img
+            src="img/testimonials/testimonials-3.jpg"
+            alt=""
+            class="test-img"
+          />
+          <h1 class="test-header">Jerna Khalis</h1>
+          <p class="test-role">Store owner</p>
+          <div class="test-icon-box">
+            <i class="test-icon bi-star-fill"></i>
+            <i class="test-icon bi-star-fill"></i>
+            <i class="test-icon bi-star-fill"></i>
+            <i class="test-icon bi-star-fill"></i>
+            <i class="test-icon bi-star-fill"></i>
+          </div>
+          <p class="test-text">
+            <sup class="bi-quote test-icon-up"></sup>Export tempor illum tamen
+            malis malis eram quae irure esse labore quem cillum quid cillum eram
+            malis quorum velit fore eram velit sunt aliqua noster fugiat irure
+            amet legam anim culpa.
+            <span class="bi-quote test-icon-down"></span>
+          </p>
+        </swiper-slide>
+        <swiper-slide class="slide-two">
+          <img
+            src="img/testimonials/testimonials-4.jpg"
+            alt=""
+            class="test-img"
+          />
+          <h1 class="test-header">Matt Brandon</h1>
+          <p class="test-role">Freelancer</p>
+          <div class="test-icon-box">
+            <i class="test-icon bi-star-fill"></i>
+            <i class="test-icon bi-star-fill"></i>
+            <i class="test-icon bi-star-fill"></i>
+            <i class="test-icon bi-star-fill"></i>
+            <i class="test-icon bi-star-fill"></i>
+          </div>
+          <p class="test-text">
+            <sup class="bi-quote test-icon-up"></sup>Export tempor illum tamen
+            malis malis eram quae irure esse labore quem cillum quid cillum eram
+            malis quorum velit fore eram velit sunt aliqua noster fugiat irure
+            amet legam anim culpa.
+            <span class="bi-quote test-icon-down"></span>
+          </p>
+        </swiper-slide>
+        <swiper-slide class="slide-two">
+          <img
+            src="img/testimonials/testimonials-5.jpg"
+            alt=""
+            class="test-img"
+          />
+          <h1 class="test-header">Jhon Larson</h1>
+          <p class="test-role">EnterPreneur</p>
+          <div class="test-icon-box">
+            <i class="test-icon bi-star-fill"></i>
+            <i class="test-icon bi-star-fill"></i>
+            <i class="test-icon bi-star-fill"></i>
+            <i class="test-icon bi-star-fill"></i>
+            <i class="test-icon bi-star-fill"></i>
+          </div>
+          <p class="test-text">
+            <sup class="bi-quote test-icon-up"></sup>Export tempor illum tamen
+            malis malis eram quae irure esse labore quem cillum quid cillum eram
+            malis quorum velit fore eram velit sunt aliqua noster fugiat irure
+            amet legam anim culpa.
+            <span class="bi-quote test-icon-down"></span>
+          </p>
+        </swiper-slide>
+      </swiper-container>
+    </div>
+    <section id="team" class="team">
+      <h2 class="service-headers">TEAM</h2>
+      <h1 class="service-title">OUR TEAM</h1>
+      <div class="team-grid-box">
+        <div class="team-grid">
+          <div class="team-img-box">
+            <img src="img/team/team-1.jpg" alt="" class="team-img" />
+            <div class="team-icon-box">
+              <i class="team-icon bi-twitter-x"></i>
+              <i class="team-icon bi-facebook"></i>
+              <i class="team-icon bi-instagram"></i>
+              <i class="team-icon bi-linkedin"></i>
+            </div>
+          </div>
+          <div class="team-text-box">
+            <h1 class="team-name">Walter White</h1>
+            <p class="team-role">Chief Executive Officer</p>
+          </div>
+        </div>
+        <div class="team-grid">
+          <div class="team-img-box">
+            <img src="img/team/team-2.jpg" alt="" class="team-img" />
+            <div class="team-icon-box">
+              <i class="team-icon bi-twitter-x"></i>
+              <i class="team-icon bi-facebook"></i>
+              <i class="team-icon bi-instagram"></i>
+              <i class="team-icon bi-linkedin"></i>
+            </div>
+          </div>
+          <div class="team-text-box">
+            <h1 class="team-name">Sarah Jhonson</h1>
+            <p class="team-role">Product Manager</p>
+          </div>
+        </div>
+        <div class="team-grid">
+          <div class="team-img-box">
+            <img src="img/team/team-3.jpg" alt="" class="team-img" />
+            <div class="team-icon-box">
+              <i class="team-icon bi-twitter-x"></i>
+              <i class="team-icon bi-facebook"></i>
+              <i class="team-icon bi-instagram"></i>
+              <i class="team-icon bi-linkedin"></i>
+            </div>
+          </div>
+          <div class="team-text-box">
+            <h1 class="team-name">William Anderson</h1>
+            <p class="team-role">CTO</p>
+          </div>
+        </div>
+        <div class="team-grid">
+          <div class="team-img-box">
+            <img src="img/team/team-4.jpg" alt="" class="team-img" />
+            <div class="team-icon-box">
+              <i class="team-icon bi-twitter-x"></i>
+              <i class="team-icon bi-facebook"></i>
+              <i class="team-icon bi-instagram"></i>
+              <i class="team-icon bi-linkedin"></i>
+            </div>
+          </div>
+          <div class="team-text-box">
+            <h1 class="team-name">Amanda Jepson</h1>
+            <p class="team-role">Accountant</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2 class="service-headers">CONTACT</h2>
+      <h1 class="service-title">CONTACT US</h1>
+      <a href="" class="contact-map"></a>
+      <div class="contact-box">
+        <div class="contact-left">
+          <div class="contact-add-box">
+            <i class="contact-icon bi-geo-alt"></i>
+            <div class="add-box-content">
+              <h1 class="add-header">Address</h1>
+              <p class="add-title">A108 Adam Street, New York, NY 535022</p>
+            </div>
+          </div>
+          <div class="contact-add-box">
+            <i class="contact-icon bi-telephone"></i>
+            <div class="add-box-content">
+              <h1 class="add-header">Call Us</h1>
+              <p class="add-title">+1 5589 55488 55</p>
+            </div>
+          </div>
+          <div class="contact-add-box">
+            <i class="contact-icon bi-envelope"></i>
+            <div class="add-box-content">
+              <h1 class="add-header">Email Us</h1>
+              <p class="add-title">info@example.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="contact-inputs">
+            <input
+              type="text"
+              name=""
+              id=""
+              class="contact-input"
+              placeholder="Your name"
+            />
+            <input
+              type="email"
+              name=""
+              id=""
+              class="contact-input"
+              placeholder="Your email"
+            />
+          </div>
+          <input
+            type="text"
+            name=""
+            id=""
+            class="contact-sub"
+            placeholder="Subject"
+          />
+          <textarea
+            class="contact-message"
+            name=""
+            id=""
+            placeholder="Message"
+          ></textarea>
+          <button class="contact-btn">Send Message</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-flex">
+        <div class="footer-left">
+          <h1 class="footer-header">Gp</h1>
+          <p class="footer-text">A108, Adam street</p>
+          <p class="footer-text">New york NY 535022</p>
+          <p class="footer-phone"><b>Phone:</b> +1 5589 55488 55</p>
+          <p class="footer-phone"><b>Email:</b> info@example.com</p>
+          <div class="footer-icon-box">
+            <div class="footer-icon">
+              <i class="bi-twitter-x"></i>
+            </div>
+            <div class="footer-icon"><i class="bi-facebook"></i></div>
+            <div class="footer-icon">
+              <i class="bi-instagram"></i>
+            </div>
+            <div class="footer-icon"><i class="bi-linkedin"></i></div>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="each-footer-right">
+            <label for="" class="footer-label">Useful links</label>
+            <ul class="footer-list-box">
+              <li><a href="#" class="footer-link">Home</a></li>
+              <li><a href="#" class="footer-link">About us</a></li>
+              <li><a href="#" class="footer-link">Services</a></li>
+              <li><a href="#" class="footer-link">Terms of service</a></li>
+              <li><a href="#" class="footer-link">Privacy policy</a></li>
+            </ul>
+          </div>
+          <div class="each-footer-right">
+            <label for="" class="footer-label">Our Services</label>
+            <ul class="footer-list-box">
+              <li><a href="#" class="footer-link">Web Design</a></li>
+              <li><a href="#" class="footer-link">Web Development</a></li>
+              <li><a href="#" class="footer-link">Product Management</a></li>
+              <li><a href="#" class="footer-link">Marketing</a></li>
+              <li><a href="#" class="footer-link">Graphic Design</a></li>
+            </ul>
+          </div>
+          <div class="each-footer-right">
+            <label for="" class="footer-label">Our Newsletter </label>
+            <p class="newsletter">
+              Subscribe to our newsletter and receive the latest news about our
+              products and services!
+            </p>
+            <div class="footer-news-flex">
+              <input type="text" class="footer-input" />
+              <button class="footer-btn">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right">
+        <p class="copy-text">© Copyright <b>Gp</b> All Rights Reserved</p>
+        <p class="copy-text">Designed by <span>Abdulwarith</span></p>
+      </div>
+    </footer>
+    <a href="#home" class="arrow-up">&UpArrow;</a>
+  </body>
+</html>
