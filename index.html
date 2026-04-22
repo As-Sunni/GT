@@ -11,19 +11,32 @@
     <script defer src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-element-bundle.min.js"></script>
   </head>
-  <body>
+  <body id="content">
+    <div id="loader">
+      <div class="spinner">
+        Made With Trust
+      </div>
+    </div>
     <nav class="nav" id="nav-bar">
       <h1 class="nav-logo">GP<span class="nav-logo-span">.</span></h1>
       <div class="nav-list-box">
         <i class="toggle-btn close bi-x"></i>
         <ul class="nav-list-boxs modal">
-          <li class="nav-list"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-list">
+            <a href="#home" class="nav-link show">Home</a>
+          </li>
           <li class="nav-list"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-list"><a href="#service" class="nav-link">Services</a></li>
-          <li class="nav-list"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li class="nav-list">
+            <a href="#service" class="nav-link">Services</a>
+          </li>
+          <li class="nav-list">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
           <li class="nav-list"><a href="#team" class="nav-link">Team</a></li>
           <li class="nav-list"><a href="#" class="nav-link">Dropdown</a></li>
-          <li class="nav-list"><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="nav-list">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
         </ul>
       </div>
       <div style="display: flex; align-items: center; gap: 5px">
@@ -34,7 +47,6 @@
       </div>
       <div class="overlay"></div>
     </nav>
-    <div class="observer-target"></div>
     <section id="home" class="home">
       <h1 class="home-header-1">Powerful Digital</h1>
       <h1 class="home-header-1">Solutions With GP.</h1>

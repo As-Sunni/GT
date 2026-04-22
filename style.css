@@ -29,6 +29,64 @@ html {
   font-family: sans-serif;
   scroll-behavior: smooth;
 }
+body{
+  overflow: hidden;
+}
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999999;
+  transition: opacity 0.5s ease;
+}
+.spinner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.spinner h1{
+  font-size: 2rem;
+  color: white;
+  border-top: 3px solid var(--accent-color);
+  border-bottom: 3px solid var(--accent-color);
+  padding: 1.5rem 0;
+  animation: scroll infinite linear;
+
+}
+.spinner {
+  width: 0;
+  overflow: hidden;
+  border-right: .15em solid orange; /* The typing cursor */
+  white-space: nowrap; /* Keeps content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; 
+  /* The steps number (22) should match your character count */
+  animation: 
+    typing 3.5s steps(22, end) forwards,
+    blink-caret .1s step-end infinite;
+    color: white;
+    font-size: 2rem;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 65% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
 .nav {
   position: fixed;
   width: 100%;
@@ -39,6 +97,7 @@ html {
   transition: ease-in-out 0.3s;
   padding: 2rem 10rem;
   z-index: 9;
+  font-family: var(--nav-font);
 }
 .nav.scrolled {
   background-color: #100f0eea;
@@ -73,6 +132,9 @@ html {
 .nav-link:hover {
   color: var(--accent-color);
 }
+.nav-link.show{
+  color: var(--accent-color);
+}
 .nav-toggle-box {
   display: flex;
 }
@@ -92,7 +154,7 @@ html {
   display: none;
 }
 .no-scroll {
-  /* overflow: hidden; */
+  overflow: hidden;
   /* padding-right: 15px; */
 }
 .overlay {
@@ -256,16 +318,6 @@ swiper-slide {
 .service-headers {
   font-size: 2rem;
   color: rgba(0, 0, 0, 0.415);
-  position: relative;
-}
-.service-headers::after {
-  content: "";
-  position: absolute;
-  width: 10rem;
-  height: 1px;
-  background-color: var(--accent-color);
-  top: 50%;
-  left: 10%;
 }
 .service-title {
   font-size: 3rem;
@@ -311,10 +363,12 @@ swiper-slide {
 /* ********* CTA SECTION ************/
 .cta {
   background: transparent;
-  background-image: url(img/cta-bg.jpg);
+  background:
+    linear-gradient(110deg, rgba(0, 0, 0, 0.504), rgba(0, 0, 0, 0.666)),
+    url(img/cta-bg.jpg);
   background-attachment: fixed;
   width: 100%;
-  height: 50vh;
+  height: 100%;
   background-size: cover;
   text-align: center;
   padding: 5rem 15rem;
@@ -368,7 +422,7 @@ swiper-slide {
 }
 .portfolio-grid.active {
   display: grid;
-  animation: fadeIn .5s ease;
+  animation: fadeIn 0.5s ease;
 }
 @keyframes fadeIn {
   from {
@@ -805,29 +859,8 @@ swiper-slide {
   right: 2rem;
   bottom: 2rem;
   color: var(--heading-color);
+  z-index: 9999;
 }
-.modal {
-  /* position: absolute;
-  top: 0; */
-  /* right: 0; */
-  /* left: 15rem; */
-  /* transform: translate(-50%, 5rem); */
-  /* z-index: 999999; */
-  /* background-color: red; */
-  /* width: 100%;
-   height: 90vh; */
-  /* flex-direction: column; */
-  /* z-index: 9999; */
-}
-/* .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100dvh;
-  background-color: rgba(0, 0, 0, 0.737);
-  z-index: 99999;
-} */
 .hidden {
   display: none;
 }
